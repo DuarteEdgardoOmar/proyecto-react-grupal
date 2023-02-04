@@ -1,8 +1,9 @@
 import React from "react";
 
+
 const Carousel = ()=>{
     return(
-        <h1>Hola desde Carousel!!!</h1>
+        <h1 className="text-primary">Hola desde Carousel!!!</h1>
     )
 }
 
