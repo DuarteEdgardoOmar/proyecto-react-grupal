@@ -3,7 +3,17 @@
         {
             "id":1,
             "title":"Primer-Producto",
-            "src":"./image/exercise.png"
+            "src":"../image/add.png"
+        },
+        {
+            "id":2,
+            "title":"Segundo-Producto",
+            "src":"../image/circle.png"
+        },
+        {
+            "id":3,
+            "title":"Tercer-Producto",
+            "src":"../image/exercise.png"
         }
     ]
 }
