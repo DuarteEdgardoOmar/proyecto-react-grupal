@@ -6,11 +6,18 @@ import Carousel from "./components/carousel";
 
 function App() {
   return (
-    <div>
-      <h1>Hola Mundo!!!</h1>
+    <div className="container m-5">
 
-      <Carousel/>
+      <div className="row m-5 bg-dark">
+        <h1 className="text-warning">Hola Mundo!!!</h1>
+      </div>
+    
+      <div className="row m-5 bg-dark">
+        <Carousel/>
+      </div>
+      
     </div>
+    
   );
 }
 
