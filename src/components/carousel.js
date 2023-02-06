@@ -1,7 +1,10 @@
 import React from "react";
-import Add from "../image/add.png"
-import Circles from "../image/circles.png"
-import Exercises from "../image/exercise.png"
+import Paisaje1 from "../image/paisaje1.jpg"
+import Paisaje2 from "../image/paisaje2.jpg"
+import Paisaje3 from "../image/paisaje3.jpg"
+import Paisaje4 from "../image/paisaje4.jpg"
+import Paisaje5 from "../image/paisaje5.jpg"
+
 const Carousel = ()=>{
     return(
         <div className="container">
@@ -10,15 +13,23 @@ const Carousel = ()=>{
                 <div className="carousel-inner">
 
                     <div className="carousel-item active">
-                        <img src={Add} alt="add" className="d-block w-100"></img>
+                        <img src={Paisaje1} alt="add" className="d-block w-100"></img>
                     </div>
 
                     <div className="carousel-item">
-                        <img src={Circles} alt="circle" className="d-block w-100"></img>
+                        <img src={Paisaje2} alt="circle" className="d-block w-100"></img>
                     </div>
 
                     <div className="carousel-item">
-                        <img src={Exercises} alt="exercise" className="d-block w-100"></img>
+                        <img src={Paisaje3} alt="exercise" className="d-block w-100"></img>
+                    </div>
+
+                    <div className="carousel-item">
+                        <img src={Paisaje4} alt="exercise" className="d-block w-100"></img>
+                    </div>
+
+                    <div className="carousel-item">
+                        <img src={Paisaje5} alt="exercise" className="d-block w-100"></img>
                     </div>
 
                 </div>

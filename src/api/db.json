@@ -2,18 +2,28 @@
     "posts":[
         {
             "id":1,
-            "title":"Primer-Producto",
-            "src":"../image/add.png"
+            "title":"Paisaje-1",
+            "src":"../image/paisaje1.jpg"
         },
         {
             "id":2,
-            "title":"Segundo-Producto",
-            "src":"../image/circle.png"
+            "title":"Paisaje-2",
+            "src":"../image/paisaje2.jpg"
         },
         {
             "id":3,
-            "title":"Tercer-Producto",
-            "src":"../image/exercise.png"
+            "title":"Paisaje-3",
+            "src":"../image/paisaje3.jpg"
+        },
+        {
+            "id":4,
+            "title":"Paisaje-4",
+            "src":"../image/paisaje4.jpg"
+        },
+        {
+            "id":5,
+            "title":"Paisaje-5",
+            "src":"../image/paisaje5.jpg"
         }
     ]
 }
