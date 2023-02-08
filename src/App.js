@@ -2,18 +2,21 @@ import React from "react";
 
 import Carousel from "./components/carousel";
 
+import "../src/css/estilos.css"
 
 
 function App() {
   return (
-    <div className="container m-5">
+    <div className="container">
 
-      <div className="row m-5 bg-dark">
+      <div className="row my-2 bg-dark">
         <h1 className="text-warning">Hola Mundo!!!</h1>
       </div>
     
-      <div className="row m-5 bg-dark">
-        <Carousel/>
+      <div className="row">
+        <div className="container contenedor-carousel">
+          <Carousel/>    
+        </div>
       </div>
       
     </div>
