@@ -1,29 +1,29 @@
 {
-    "posts":[
+    "paisajes":[
         {
             "id":1,
             "title":"Paisaje-1",
-            "src":"../image/paisaje1.jpg"
+            "imagen":"paisaje1.jpg"
         },
         {
             "id":2,
             "title":"Paisaje-2",
-            "src":"../image/paisaje2.jpg"
+            "imagen":"paisaje2.jpg"
         },
         {
             "id":3,
             "title":"Paisaje-3",
-            "src":"../image/paisaje3.jpg"
+            "imagen":"paisaje3.jpg"
         },
         {
             "id":4,
             "title":"Paisaje-4",
-            "src":"../image/paisaje4.jpg"
+            "imagen":"paisaje4.jpg"
         },
         {
             "id":5,
             "title":"Paisaje-5",
-            "src":"../image/paisaje5.jpg"
+            "imagen":"paisaje5.jpg"
         }
     ]
 }

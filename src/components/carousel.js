@@ -1,36 +1,64 @@
-import React from "react";
-import Paisaje1 from "../image/paisaje1.jpg"
-import Paisaje2 from "../image/paisaje2.jpg"
-import Paisaje3 from "../image/paisaje3.jpg"
-import Paisaje4 from "../image/paisaje4.jpg"
-import Paisaje5 from "../image/paisaje5.jpg"
+import React, { useEffect, useState } from "react";
+// import Paisaje1 from "../image/paisaje1.jpg"
+// import Paisaje2 from "../image/paisaje2.jpg"
+// import Paisaje3 from "../image/paisaje3.jpg"
+// import Paisaje4 from "../image/paisaje4.jpg"
+// import Paisaje5 from "../image/paisaje5.jpg"
+import axios from "axios"
 
 const Carousel = ()=>{
+
+    const [arreglo, setArreglo] = useState([])
+
+    useEffect(()=>{
+
+        const cargarPaisajes = async ()=>{
+
+            try {
+                const res = await (await axios.get("http://localhost:5555/paisajes"))
+        
+                if(res.status===200){
+                    console.log(res.data)
+        
+                    setArreglo(res.data)
+                }
+                
+            } catch (error) {
+                console.log(error)
+            }
+
+        }
+
+        cargarPaisajes();
+    },[])
+
     return(
+
         <div className="container">
             <div className="carousel slide" id="demo" data-bs-ride="carousel">
 
                 <div className="carousel-inner">
+                
+                    {arreglo.map((el, index)=>                        
+                             
+                        {if(index===0){
+                            return(
+                            <div className="carousel-item active" key={el.id+1}>
+                            <img src={`../image/${el.imagen}`} alt={el.title} className="d-block w-100"></img>
+                        </div>
+                            )
+                        }else{
+                            return(
+                            <div className="carousel-item " key={el.id+1}>
+                            <img src={`../image/${el.imagen}`} alt={el.title} className="d-block w-100"></img>
+                        </div>
+                            )
+                        }}
 
-                    <div className="carousel-item active">
-                        <img src={Paisaje1} alt="add" className="d-block w-100"></img>
-                    </div>
 
-                    <div className="carousel-item">
-                        <img src={Paisaje2} alt="circle" className="d-block w-100"></img>
-                    </div>
-
-                    <div className="carousel-item">
-                        <img src={Paisaje3} alt="exercise" className="d-block w-100"></img>
-                    </div>
-
-                    <div className="carousel-item">
-                        <img src={Paisaje4} alt="exercise" className="d-block w-100"></img>
-                    </div>
-
-                    <div className="carousel-item">
-                        <img src={Paisaje5} alt="exercise" className="d-block w-100"></img>
-                    </div>
+                      
+                   
+                    )}
 
                 </div>
 
