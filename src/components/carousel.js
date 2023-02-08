@@ -15,7 +15,7 @@ const Carousel = ()=>{
         const cargarPaisajes = async ()=>{
 
             try {
-                const res = await (await axios.get("http://localhost:5555/paisajes"))
+                const res = await axios.get("http://localhost:5555/paisajes")
         
                 if(res.status===200){
                     console.log(res.data)
