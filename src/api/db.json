@@ -24,6 +24,32 @@
             "id":5,
             "title":"Paisaje-5",
             "imagen":"paisaje5.jpg"
+        },
+        {
+            "id":6,
+            "title":"Paisaje-6",
+            "imagen":"paisaje1.jpg"
+        },
+        {
+            "id":7,
+            "title":"Paisaje-5",
+            "imagen":"paisaje2.jpg"
+        },
+        {
+            "id":8,
+            "title":"Paisaje-5",
+            "imagen":"paisaje3.jpg"
+        },
+        {
+            "id":9,
+            "title":"Paisaje-5",
+            "imagen":"paisaje4.jpg"
+        },
+        {
+            "id":10,
+            "title":"Paisaje-5",
+            "imagen":"paisaje5.jpg"
         }
+
     ]
 }

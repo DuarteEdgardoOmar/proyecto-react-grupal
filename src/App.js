@@ -1,20 +1,20 @@
 import React from "react";
 
-import Carousel from "./components/carousel";
+import Carousel from "./components/carousel.jsx";
 
 import "../src/css/estilos.css"
 
 
 function App() {
   return (
-    <div className="container">
+    <div className="container-fluid">
 
-      <div className="row my-2 bg-dark">
+      <div className="row mb-5 bg-dark">
         <h1 className="text-warning">Hola Mundo!!!</h1>
       </div>
     
       <div className="row">
-        <div className="container contenedor-carousel">
+        <div className="container">
           <Carousel/>    
         </div>
       </div>
