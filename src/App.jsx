@@ -14,7 +14,7 @@ function App() {
       </div>
     
       <div className="row">
-        <div className="container bg-dark">
+        <div className="container">
           <Carousel/>    
         </div>
       </div>
