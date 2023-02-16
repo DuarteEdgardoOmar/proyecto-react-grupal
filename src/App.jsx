@@ -4,6 +4,8 @@ import Carousel from "./components/carousel.jsx";
 
 import "../src/css/estilos.css"
 
+import CarouselInstagram from "./components/carouselInstagram.jsx";
+
 
 function App() {
   return (
@@ -16,6 +18,12 @@ function App() {
       <div className="row">
         <div className="container bg-dark">
           <Carousel/>    
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="container mt-5 h-25 w-25">
+          <CarouselInstagram/>    
         </div>
       </div>
       
